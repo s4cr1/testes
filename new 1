@@ -1,0 +1,36 @@
+//cadastro de pessoas fisicas
+
+var
+	//declaração de variaveis
+	nome, n_cpf, n_rg, escolha :caracter
+	idade: inteiro
+
+
+inicio
+enquanto escolha <- "s"
+
+	//criação do cadastro de pessoa
+	escreval("Informe o nome da pessoa")
+	leia(nome)
+	escreval("informe o numero do rg")
+	leia(n_rg)
+	escreval("informe o numero do cpf")
+	leia(n_cpf)
+	escreval("informe a idade da pessoa")
+	leia(idade)
+	
+	//consulta de pessoa
+	escreval("Nome: ", nome,"\n numerodo RG ", n_rg,"\n Numero do cpf: ", n_cpf,"\n idade: ", idade)
+	
+	se(idade < 18){
+	escreval("Jovem aprendiz")}
+	fimse
+	se(idade >= 18){
+	escreval("pode ser contratado por CLT ou PJ")}
+	fimse
+	escreval("deseja cadastrar uma nova pessoa?")
+	leia(escolha)
+	fimenquanto
+
+	
+fimalgoritmo
